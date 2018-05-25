@@ -1,0 +1,63 @@
+# Developer, translator may add his/her name
+AuthorsList=madRat
+# formats
+{0}Bytes_1={0} byte
+{0}Bytes_N={0} bytes
+{0}KiBytes_N={0} KiB
+{0}MiBytes_N={0} MiB
+{0}GiBytes_N={0} GiB
+{0}TiBytes_N={0} TiB
+{0}PiBytes_N={0} PiB
+{0}_N={0} 
+{0}Kilo_N={0} Kilo
+{0}Mega_N={0} Mega
+{0}Giga_N={0} Giga
+{0}Tera_N={0} Tera
+{0}Peta_N={0} Peta
+# format period
+{0}days_1={0} day
+{0}days_N={0} days
+{0}hours_1={0} hour
+{0}hours_N={0} hours
+{0}minutes_1={0} minute
+{0}minutes_N={0} minutes
+{0}seconds_1=a second
+{0}seconds_N={0} seconds
+# Date format
+{0}-{1}-{2}={0}-{1}-{2}
+Password\ ({0}\ bits)_1=Password ({0} bit)
+Password\ ({0}\ bits)_N=Password ({0} bits)
+# Help topics and indexes
+Get\ Started_CONTENT=This is a free open source password manager for J2ME mobile phones, which helps you to keep your secrets safely.
+License_CONTENT=Copyright (C) 2018 Anatoly madRat L. Berenblit <beranat@users.noreply.github.com>.\n\nLockoree is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nLockore distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nSee the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with Lockore. If not, see <http://www.gnu.org/licenses/>.
+Stores_CONTENT=Information is stored in several archives, called a store. Each storage has a title, description and icon. The password is not saved anywhere, but its 16 bits from 512 bits hash are stored for fast password verification. For the encryption key are used another 256 bits for hash, so If you lose your password - you can not access to data too.
+Records_CONTENT=The record is intended for storing objects, for example a credit card, an e-mail account, etc. Each record has a name, description, icon and set of fields for data storage.\n\nNote: For simplify data entering, it is possible to import information from a text file which every line represents "FieldName=Content".
+Fields_CONTENT=The field is intended for storing various typed data.\n\nFor hiding sensitive information from outsiders, the field can be marked as "protected", which means that by default the content is not displayed, and you need to press a key for showing it.\n\nFor field's content it is possible to generate a random value in accordance with the its type and password strength requirements.\n\nNote: Field's content may be not only entered by keyboard, but also loaded from file.
+Types_CONTENT=The simplest data are 'Text' (any printable characters), 'Integer' (number in -9.223x10^18...9.223x10^18 range), 'Binary' (some data in Hex/Base32 or Base64 encoding) and 'Data' (calendar date).\n\nTypes 'URI', 'Email' and 'Phone' - check its content according to the type and application requests the J2ME system to do special action like 'call phone', 'open uri' and 'send email'.\n\nType 'OTP' - Content is a one time password list. There every line is password that is valid for only one login session or transaction.\n\nType 'TOTP' - Time-based OTP two-factor authentication (RFC-6238).
+Settings_CONTENT=Settings allow you to change the color theme, for the best display on a specific phone, adjust time for precision converting phone's time to UTC for Time-based OTP authentication.
+#Pay systems
+icon_181=Diners\ Club
+icon_182=MasterCard
+icon_183=DigitalCoin
+icon_184=JCB
+icon_185=MIR
+icon_186=PayPal
+icon_187=UnionPay
+icon_188=VISA
+icon_189=WebMoney
+icon_190=Yandex.Money
+icon_191=AmEx
+
+# custom icons
+icon_157=Mail.Ru
+icon_158=Steam
+icon_159=Origin
+icon_160=Skype
+icon_161=Apple
+icon_162=Google
+icon_163=Ebay
+icon_164=Amazon
+icon_165=Microsoft
+icon_166=Yahoo
+icon_167=Yandex
+icon_168=Sony

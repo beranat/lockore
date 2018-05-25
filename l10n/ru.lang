@@ -1,0 +1,384 @@
+# Developer, translator may add his/her name
+AuthorsList=madRat
+# format byte(s)
+{0}Bytes_1={0} байт
+{0}Bytes_2={0} байта
+{0}Bytes_N={0} байтов
+{0}KiBytes_N={0} Кб
+{0}MiBytes_N={0} Мб
+{0}GiBytes_N={0} Гб
+{0}TiBytes_N={0} Тб
+{0}PiBytes_N={0} Пб
+{0}_N={0} 
+{0}Kilo_N={0} кило
+{0}Mega_N={0} мега
+{0}Giga_N={0} гига
+{0}Tera_N={0} тера
+{0}Peta_N={0} пета
+# format period
+{0}days_1={0} день
+{0}days_2={0} дня
+{0}days_N={0} дней
+{0}hours_1={0} час
+{0}hours_2={0} часа
+{0}hours_N={0} часов
+{0}minutes_1={0} минута
+{0}minutes_2={0} минуты
+{0}minutes_N={0} минут
+{0}seconds_1={0} секунда
+{0}seconds_2={0} секунды
+{0}seconds_N={0} секунд
+#formate DATE
+{0}-{1}-{2}_={0}.{1}.{2}
+# Help topics and indexes
+Get\ Started=Введение
+License=Лицензия
+#Stores
+Records=Записи
+Fields=Поля
+Types=Типы данных
+Get\ Started_CONTENT=Эта программа предназначена для безопасного хранения данных на мобильных телефонах.
+License_CONTENT=Все права защищены (C) 2018 Анатолий madRat Л. Беренблит <beranat@users.noreply.github.com>.\n\nЭта программа является свободной; Вы можете распространять ее и (или) изменять, соблюдая условия Генеральной публичной лицензии GNU, опубликованной Фондом свободного программного обеспечения; либо редакции 2 Лицензии.\n\nЭта программа распространяется в надежде на то, что она окажется полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, включая подразумеваемую гарантию КАЧЕСТВА либо ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Подробности содержатся в Генеральной публичной лицензии GNU.\n\nВместе с этой программой должен распространяться экземпляр Генеральной публичной лицензии GNU, если он отсутствует, сообщите об этом в Фонд свободного программного обеспечения (Free Software Foundation, Inc.), 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA или перейдите по адресу <http://www.gnu.org/licenses/>.
+Stores_CONTENT=Информация может храниться в нескольких архивах, именуемых хранилище. Каждое хранилище обладает названием, описанием и иконкой.\n\nПароль не храниться, для упрощения проверки хранится 16 бит от 512-битного хеша, для шифирования используются другие 256 бит. Поэтому если Вы забудете пароль - то тоже не сможете получить доступ к данным.
+Records_CONTENT=Запись предназначена для хранения объектов, например кредитная карта, учётная запись электронной почты и т.п. Каждая запись имеет имя, описание, иконку и набор полей для хранения данных.\n\nДля упрощения добавления данных используйте загрузку из текстового файла, содержащего строки в формате "Поле=Содержимое".
+Fields_CONTENT=Поле предназначено для хранения различных типизированных данных.\n\nДля дополнительной защиты особо важной информации от посторонних поле может быть отмечено как "защищённое", это означает - что по-умолчанию содержимое не показывается, и для его отображения нужно выбрать дополнительный просмотр.\n\nСодержимое поля может быть не только введено с клавиатуры, но и загружено из файла (это оптимальнее для данных бОльшего объёма, чем несколько слов).
+Types_CONTENT=Основные типы данных - 'Текст' (строка символов), 'Целое' (Число в диапазоне -9.223x10^18...9.223x10^18), 'Объект' (двоичные данные в 16-ричной, Base32 или Base64 кодировке) and 'Дата' (Календарная дата).\n\nДополнительные типы данных 'Ссылка', 'Почта' and 'Телефон' - позволяют (если разрешено производителем телефонома) выполнить соответствующее действие 'открыть ссылку', 'отправить сообщение' или 'позвонить'.\n\nТип 'Разовый пароль' - содержимое поля является списком строк, каждая из которых - однократный пароль.\n\nТип 'TOTP по RFC-6238' - одноразовый пароль с привязкой по времени, в соответствии с RFC-6238.
+Settings_CONTENT=Настройки позволяют изменить цветовую тему, для наилучшего отображения на конкретном телефоне.\n\nКроме того возможно задать корректирующее смещение времени телефона относительно UTC, для корректного вычисления одноразовых паролей с привязкой по времени.
+
+#Common buttons
+Help=Помощь
+Back=Назад
+Cancel=Отмена
+OK=Готово
+Select=Выбрать
+Edit=Изменить
+View=Обзор
+Delete=Удалить
+Rename=Переназвать
+New=Добавить
+Yes=Да
+No=Нет
+Stop=Остановить
+Exit=Выход
+Save=Сохранить
+About=О программе
+Open=Открыть
+
+#Common names
+Unnamed=Безимянный
+Password=Пароль
+Description=Описание
+Delete\ '{0}'?=Стереть '{0}'?
+Completed=Выполненно
+Alarm=Уведомление
+Error=Ошибка
+Information=Инфо
+Confirmation=Подтверждение
+Warning=Предупреждение
+Please\ wait=Подождите
+Length\ {0}=Размер {0}
+Length\ {0}chars=Размер {0}симв.
+
+#HelpIndexScreen/HelpScreen
+Content=Разделы
+
+#GeneratePassword
+Strength=Надёжность
+Append=Добавить
+
+Pin\ (4\ digits)=ПИН-код (4 цифры)
+Code\ (32\ bits)=Код (32 бита)
+Code\ (8\ digits)=8 цифр
+Simple\ (8\ chars)=Простой (8 симв.)
+Moderate\ (80\ bits)=Средний (80 бит)
+Moderate\ (14\ chars)=Средний (14 симв.)
+Good\ (128\ bits)=Хороший (128 бит)
+Strong\ (256\ bits)=Сильный (256 бит)
+
+#RecordViewScreen
+No\ fields=Нет полей
+Edit\ record\ for\ adding\ fields=Отредактируйте запись
+Load\ error=Ошибка загрузки
+(empty)=(не задан)
+
+#RecordEditScreen/ChangeTypeList
+New\ Record=Новая Запись
+Record\ Name=Название Записи
+Field\ Name=Название Поля
+Add\ field=Новое поле
+Icon=Рисунок
+Change\ icon=Рисунок
+Rename\ field=Переименовать
+Delete\ field=Удалить поле
+Type=Тип
+Change\ type=Изменить тип
+Protection=Защита поля
+Toggle\ protection=Защита поля
+Inconceivable\ types\ convertion=Невозможное преобразование типов
+Field\ Type=Тип поля
+Text=Текст
+Integer=Число
+Binary=Объект
+Date=Дата
+URI=Ссылка
+Phone=Телефон
+Email=Почта
+OTP=Разовый пароль
+TOTP\ (RFC-6238)=TOTP по RFC-6238
+Add\ file=Из файла
+Load\ from\ file=Из файла
+Save\ changes?=Сохранить изменения?
+
+#SplashScreen
+Version\ {0}=Версия {0}
+All\ rights\ reserved.=Все права защищены.
+(C)\ 2018\ {0}=(C) 2018 {0}
+AES/ECB\ decryption=AES-ECB расшифрование
+AES/ECB\ encryption=AES-ECB зашифрование
+AES/CBC\ decryption=AES/CBC расшифрование
+AES/CBC\ encryption=AES/CBC зашифрование
+'{0}'\ has\ failed\ the\ mathematical\ check={0} неожиданный математический результат
+Algorithm\ '{0}'\ has\ been\ not\ implemented=Алгоритм '{0}' не поддерживается
+Algorithm\ '{0}'\ has\ been\ not\ supported=Алгоритм '{0}' не соответствует стандарту
+Key\ '{0}'\ has\ been\ not\ supported=Крипто-ключ {0} не поддерживается
+Param\ for\ {0}\ has\ been\ not\ supported=Параметризация {0} не поддерживается
+Padding\ '{0}'\ for\ {1}\ has\ been\ not\ supported=Выравнимание '{0}' для {1} неподдерживается
+# only... - less then 21 chars
+Initialization=Инициализация
+only\ at\ 1st\ start=только при 1ом старте
+MD5=MD5
+SHA-1=SHA-1
+SHA-3=SHA-3
+AES=AES
+AES-ECB=AES-ECB
+AES-CBC=AES-CBC
+Secure\ Random=ГСЧ
+
+# ValueScreen
+Random=Случ.пароль
+To\ Hex=Как 16-ричый
+To\ Base-32=Как Base-32
+To\ Base-64=Как Base-64
+Generate\ word=Сгенерировать
+Unsupported\ type\ {0}=Неизвестный тип {0}
+Name\ is\ empty=Имя не задано
+'{0}'\ is\ not\ number='{0}' не число
+Max\ size\ ({0}char)\ exceeded=Допустимый размер ({0}символов) превышен
+Trivial\ password=Очевидный пароль
+{0}\ bits\ strength={0} бит надёжности
+Invalid\ data\ '{0}'=Некорректные данные {0}
+
+#Pbkdf2Counting
+Counting=Расчёт
+Undefined=Неизвестно
+
+#SelectImageScreen
+Images=Рисунки
+None=Никакого
+Preview=Показать
+Scroll=Пролистать
+
+#StoresListScreen
+Stores=Тома
+Create=Создать
+Create\ store=Создать том
+Details=Информация
+Info=Инфо
+JSR-118\ name=JSR-118 имя
+Used\ space=Использовано
+Free\ space=Доступно
+PBKDF2\ '{0}'\ not\ supported=PBKDF2 '{0}' не поддерживается
+Unsupported\ format=Формат не поддерживается
+Error\ {0}=Ошибка {0}
+No\ stores\ available=Томов ещё не создано
+Delete\ store\ '{0}'\ and\ all\ data\ on\ it?=Удалить том '{0}' со всем содержимым?
+#Cipher=
+#Hash=
+#PBKDF2\ hash=PBKDF2 Хеш
+#PBKDF2\ count=Кол-во повторов
+
+#StoreEditScreen
+New\ Store=Новый Том
+Store\ Name=Название
+Repeat\ password=Повторите пароль
+PBKDF2\ hash=PBKDF2 хеш
+Cipher=Шифр
+Hash=Хеш-функция
+PBKDF2\ count=Кол-во повторов
+#Icon/Change icon
+PBKDF2\ count\ is\ not\ positive=Кол-во повторов не положительное число
+Canceled\ by\ user=Отменено пользователем
+Password\ ({0}\ bits)_1=Пароль ({0} бит)
+Password\ ({0}\ bits)_2=Пароль ({0} бита)
+Password\ ({0}\ bits)_N=Пароль ({0} бит)
+Password\ (unchanged)=Пароль (неизменён)
+Passwords\ are\ mismatch=Пароли различны
+{0}\ computing={0} вычисление
+Password\ is\ empty=Пустой пароль
+Average\ password\ -\ for\ non-sensible\ data=Приемлимо для неважных данных
+
+#StoreViewScreen
+Add\ record=Добавить запись
+Props=Свойства
+Store\ options=Свойства тома
+Back\ to\ stores=К списку томов
+Copy=Копия
+Duplicate=Скопировать
+Locked=Заблокирован
+No\ access\ to\ records=Нет доступа к записям
+No\ records\ available=Записи ещё не созданы
+Invalid\ password=Неверный пароль
+{0}'s\ copy={0} копия
+
+#CopyStore
+Copying=Копирование
+Not\ enough\ space\ (additionally\ {0})=Не хватает места (нужно ещё {0})
+Interrupted\ by\ user=Преравно пользователем
+
+#Midlet
+Not\ started=Не запущен
+Already\ started=Уже запущен
+Destroyed=Остановлен
+Password's\ dictionary\ {0}\ is\ not\ available=Список слабых паролей ({0}) отсутствует
+No\ free\ stores=Нет свободных томов
+Storage\ is\ not\ available=Том недоступен
+Class=Тип
+Fatal\ Error=Сбой
+
+#PasswordScreen
+Enter\ password=Введите пароль
+
+#ThemeScreen
+Themes=Оформление
+Invalid\ Theme=Ошибка
+System\ theme=Системное
+JAD\ theme=JAD-файл
+Dark=Тёмная
+Light=Светлая
+Another=Другое
+Show\ another=Показать другое
+'{0}'\ can\ not\ loaded='{0}' невозможно загрузить
+Lorem\ ipsum=Пример
+Eiusmod\ tempor\ incididunt\ et\ dolore\ magna=Графическое оформление программы
+Minim\ veniam=Интерфейса
+Quis\ nostrud\ exercitation\ ullamco\ laboris=Пользовательский интерфейс
+Duis\ aute=Для ознакомления
+Reprehenderit\ in\ voluptate\ velit\ esse=Цвета, шрифт рисунки и их расположение
+Restart\ application\ for\ apply\ theme?=Перезапустить приложение для обновления темы?
+Restart=Рестарт
+
+#SettingsScreen
+Settings=Настройки
+Reset=Сбросить
+Reset\ settings=Сбросить настройки
+Theme=Оформление
+Reset\ settings\ (data\ will\ remain\ unchanged)?=Сбросить настройки (данные не удаляются)?
+Time\ adjustment=Коррекция времени
+Not\ needed=Не требуется
+
+#System Info
+System\ info=О телефоне
+System\ Info=Системная информация
+Platform=Платформа
+Locale=Язык
+Filesystem=Файловая подсистема
+Text\ limit=Размер строки
+{0}hash/s={0}хеш/сек
+{0}/s={0}/сек
+
+#TimeAdjustmentScreen
+Time\ Adjustment=Коррекция Времени
+Exact\ time=Точное время
+Time\ offset\ (sec)=Смещение (сек)
+Invalid=Недопустимый
+
+# Icon names
+otp=разовый пароль
+email=почта
+uri=ссылка
+phone=телефон
+binary=данные
+date=дата
+password=пароль
+text=строка
+number=число
+store=хранилище
+settings=настройки
+art=исскуство
+key=ключ
+certificate=сертификат
+signature=подпись
+chip=память
+random=случайность
+identity=удостоверение
+airplane=самолёт
+basket=корзина
+bluedoc=синий
+bus=автобус
+card=карта
+car=машина
+coin=монета
+devel=молоток
+floppy=дискета
+forum=форум
+garage=гараж
+home=дом
+laptop=ноутбук
+medkit=аптечка
+messanger=сообщения
+music=музыка
+office=офис
+hsm=амб
+palm=пальма
+paw=лапа
+printer=принтер
+reddoc=красный
+satelite=спутник
+server=сервер
+shield=защита
+sword=меч
+thermometer=термометр
+ticket=билет
+transmitter=антенна
+user=человек
+tv=телевизор
+
+# AddFileList
+No\ access\ to\ files=Нет доступа к файлам
+No\ access\ to\ {0}=Нет доступа к {0}
+File\ too\ large\ ({0})=Файл слижком большой ({0})
+Too\ long=Превышена длина
+
+# FieldViewAlert
+Call=Вызвать
+Send=Отправ.
+Spend=Изъять
+Feature\ not\ supported=Возможность не поддерживается
+{0}\ saved={0} сохранён
+
+# payment systems icon(s)
+icon_181=Diners\ Club
+icon_182=MasterCard
+icon_183=Криптовалюта
+icon_184=JCB
+icon_185=МИР
+icon_186=PayPal
+icon_187=UnionPay
+icon_188=VISA
+icon_189=WebMoney
+icon_190=Яндекс.Деньги
+icon_191=AmEx
+
+# custom icons
+icon_157=Mail.Ru
+icon_158=Steam
+icon_159=Origin
+icon_160=Skype
+icon_161=Apple
+icon_162=Google
+icon_163=Ebay
+icon_164=Amazon
+icon_165=Microsoft
+icon_166=Yahoo
+icon_167=Яndex
+icon_168=Sony

@@ -1,0 +1,4 @@
+# THEME_NAME=background, foreground, hl-background, hl-foreground, border, hl-border, default
+# All colors must be ALPHA-R-G-B in hex,  empty value means use system color
+Light=00000000,,FF101010,FFFFFFFF,00000000,FF303030,FFB0B0B0
+Dark=00000000,,FFF0F0F0,FF000000,00000000,FFC0C0C0,FF404040
