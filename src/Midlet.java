@@ -527,7 +527,9 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "messanger","music",    "office",   "palm",     "paw",
         "printer",  "reddoc",   "satelite", "server",   "shield",
         "sword",    "thermometer", "ticket", "transmitter", "tv",
-        "user"
+        "user",
+		"administrator", "anonymous", "bulb", "cloud", "gift", "gnu",
+		"lightning", "rain",	"snow",		"sun",		"tux"
     };
 
     static final int ICON_NULL               = Record.DEFAULT_ICON;

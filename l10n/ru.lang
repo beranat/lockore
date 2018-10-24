@@ -342,6 +342,17 @@ ticket=билет
 transmitter=антенна
 user=человек
 tv=телевизор
+administrator=администратор
+anonymous=аноним
+bulb=лампа
+cloud=облако
+gift=подарок
+gnu=GNU
+lightning=молния
+rain=дождь
+snow=снег
+sun=солнце
+tux=тукс
 
 # AddFileList
 No\ access\ to\ files=Нет доступа к файлам

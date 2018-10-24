@@ -35,6 +35,9 @@ Records_CONTENT=The record is intended for storing objects, for example a credit
 Fields_CONTENT=The field is intended for storing various typed data.\n\nFor hiding sensitive information from outsiders, the field can be marked as "protected", which means that by default the content is not displayed, and you need to press a key for showing it.\n\nFor field's content it is possible to generate a random value in accordance with the its type and password strength requirements.\n\nNote: Field's content may be not only entered by keyboard, but also loaded from file.
 Types_CONTENT=The simplest data are 'Text' (any printable characters), 'Integer' (number in -9.223x10^18...9.223x10^18 range), 'Binary' (some data in Hex/Base32 or Base64 encoding) and 'Data' (calendar date).\n\nTypes 'URI', 'Email' and 'Phone' - check its content according to the type and application requests the J2ME system to do special action like 'call phone', 'open uri' and 'send email'.\n\nType 'OTP' - Content is a one time password list. There every line is password that is valid for only one login session or transaction.\n\nType 'TOTP' - Time-based OTP two-factor authentication (RFC-6238).
 Settings_CONTENT=Settings allow you to change the color theme, for the best display on a specific phone, adjust time for precision converting phone's time to UTC for Time-based OTP authentication.
+
+gnu=GNU
+
 #Pay systems
 icon_181=Diners\ Club
 icon_182=MasterCard
