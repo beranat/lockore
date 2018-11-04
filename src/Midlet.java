@@ -486,6 +486,12 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         if (null != self_.display_)
             self_.display_.setCurrent(n);
     }
+    //* ICONS:
+    //* 0(ICON_NULL)                                - NULL/NONE
+    //* 1..ICON_INTERNAL_INDEX-1                    - User's icons
+    //* ICON_INTERNAL_INDEX..ICON_EXTRA_INDEX-1     - Extra (optional) icons
+    //* ICON_EXTRA_INDEX..ICON_LIMIT_INDEX-1        - GUI (required) that are available for user as icons
+    //* ICON_LIMIT_INDEX..                          - GUI (required) icons, can not be used for store/record/field icon
 
     //* Icon resources
     static final int ICON_ALERT              = 259;
@@ -518,18 +524,24 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
     static final int ICON_ID                 = 238;
 
     static final int ICON_EXTRA_INDEX        = 230;
-    static final int ICON_INTERNAL_INDEX     = 192;
+    static final int ICON_INTERNAL_INDEX     = 128;
 
     private static final String[] ICON_EXTRA_NAMES = {
-        "airplane", "basket",   "bluedoc",  "bus",      "car",
-        "card",     "coin",     "devel",    "floppy",   "forum",
-        "garage",   "home",     "hsm",      "laptop",   "medkit",
-        "messanger","music",    "office",   "palm",     "paw",
-        "printer",  "reddoc",   "satelite", "server",   "shield",
-        "sword",    "thermometer", "ticket", "transmitter", "tv",
-        "user",
-		"administrator", "anonymous", "bulb", "cloud", "gift", "gnu",
-		"lightning", "rain",	"snow",		"sun",		"tux"
+        "admin",    "airplane", "anonymous","basket",   "bluedoc",
+        "bulb",     "bus",
+        "car",      "card",     "cloud",    "coin",
+        "devel",
+        "floppy",   "forum",
+        "garage",   "gift",     "gnu",
+        "home",     "hsm",
+        "laptop",   "lightning",
+        "medkit",   "messanger","music",
+        "office",
+        "palm",     "paw",      "printer",
+        "rain",     "reddoc",
+        "satelite", "server",   "shield",   "snow",     "sun",      "sword",
+        "thermometer","ticket", "transmitter", "tux",   "tv",
+        "user"
     };
 
     static final int ICON_NULL               = Record.DEFAULT_ICON;

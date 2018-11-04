@@ -342,7 +342,8 @@ ticket=билет
 transmitter=антенна
 user=человек
 tv=телевизор
-administrator=администратор
+
+admin=администратор
 anonymous=аноним
 bulb=лампа
 cloud=облако
