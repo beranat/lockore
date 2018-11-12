@@ -1,6 +1,6 @@
-# Developer, translator may add his/her name
+#developer, translator may add his/her name
 AuthorsList=madRat
-# format byte(s)
+#format bytes
 {0}Bytes_1={0} байт
 {0}Bytes_2={0} байта
 {0}Bytes_N={0} байтов
@@ -15,7 +15,7 @@ AuthorsList=madRat
 {0}Giga_N={0} гига
 {0}Tera_N={0} тера
 {0}Peta_N={0} пета
-# format period
+#format period
 {0}days_1={0} день
 {0}days_2={0} дня
 {0}days_N={0} дней
@@ -28,9 +28,9 @@ AuthorsList=madRat
 {0}seconds_1={0} секунда
 {0}seconds_2={0} секунды
 {0}seconds_N={0} секунд
-#formate DATE
+#format DATE
 {0}-{1}-{2}_={0}.{1}.{2}
-# Help topics and indexes
+#Help topics and indexes
 Get\ Started=Введение
 License=Лицензия
 #Stores
@@ -79,7 +79,7 @@ Please\ wait=Подождите
 Length\ {0}=Размер {0}
 Length\ {0}chars=Размер {0}симв.
 
-#HelpIndexScreen/HelpScreen
+#HelpIndex/Help Screen
 Content=Разделы
 
 #GeneratePassword
@@ -154,7 +154,7 @@ AES-ECB=AES-ECB
 AES-CBC=AES-CBC
 Secure\ Random=ГСЧ
 
-# ValueScreen
+#ValueScreen
 Random=Случ.пароль
 To\ Hex=Как 16-ричый
 To\ Base-32=Как Base-32
@@ -292,7 +292,7 @@ Exact\ time=Точное время
 Time\ offset\ (sec)=Смещение (сек)
 Invalid=Недопустимый
 
-# Icon names
+#Icon names
 otp=разовый пароль
 email=почта
 uri=ссылка
@@ -311,86 +311,97 @@ signature=подпись
 chip=память
 random=случайность
 identity=удостоверение
+
+admin=администратор
 airplane=самолёт
+anonymous=аноним
 basket=корзина
 bluedoc=синий
 bus=автобус
-card=карта
+bulb=лампа
 car=машина
+card=карта
+cloud=облако
 coin=монета
 devel=молоток
 floppy=дискета
 forum=форум
 garage=гараж
+gift=подарок
+gnu=GNU
 home=дом
+hsm=амб
 laptop=ноутбук
+lightning=молния
 medkit=аптечка
 messanger=сообщения
 music=музыка
+note=заметка
 office=офис
-hsm=амб
 palm=пальма
 paw=лапа
 printer=принтер
+rain=дождь
 reddoc=красный
 satelite=спутник
 server=сервер
 shield=защита
+snow=снег
+sun=солнце
 sword=меч
 thermometer=термометр
 ticket=билет
 transmitter=антенна
-user=человек
-tv=телевизор
-
-admin=администратор
-anonymous=аноним
-bulb=лампа
-cloud=облако
-gift=подарок
-gnu=GNU
-lightning=молния
-rain=дождь
-snow=снег
-sun=солнце
 tux=тукс
+tv=телевизор
+user=человек
 
-# AddFileList
+#AddFileList
 No\ access\ to\ files=Нет доступа к файлам
 No\ access\ to\ {0}=Нет доступа к {0}
 File\ too\ large\ ({0})=Файл слижком большой ({0})
 Too\ long=Превышена длина
 
-# FieldViewAlert
+#FieldViewAlert
 Call=Вызвать
 Send=Отправ.
 Spend=Изъять
 Feature\ not\ supported=Возможность не поддерживается
 {0}\ saved={0} сохранён
 
-# payment systems icon(s)
-icon_181=Diners\ Club
-icon_182=MasterCard
-icon_183=Криптовалюта
-icon_184=JCB
-icon_185=МИР
-icon_186=PayPal
-icon_187=UnionPay
-icon_188=VISA
-icon_189=WebMoney
-icon_190=Яндекс.Деньги
+#Pay systems
 icon_191=AmEx
+icon_190=Diners\ Club
+icon_189=MasterCard
+icon_188=VISA
+icon_187=UnionPay
+icon_186=PayPal
+icon_185=МИР
+icon_184=JCB
+icon_183=Криптовалюта
 
-# custom icons
-icon_157=Mail.Ru
-icon_158=Steam
-icon_159=Origin
-icon_160=Skype
-icon_161=Apple
-icon_162=Google
-icon_163=Ebay
-icon_164=Amazon
-icon_165=Microsoft
+#Custom
+icon_175=Sony
+icon_174=Steam
+icon_173=Origin
+icon_172=Skype
+icon_171=Apple
+icon_170=Google
+icon_169=Ebay
+icon_168=Amazon
+icon_167=Microsoft
 icon_166=Yahoo
-icon_167=Яndex
-icon_168=Sony
+icon_165=Yubikey
+
+#Custom ru
+icon_159=Яндекс.Деньги
+icon_158=Яndex
+icon_157=Mail.Ru
+icon_156=Тинькофф
+icon_155=Альфа банк
+icon_154=Авангард
+icon_153=Промсвязьбанк
+icon_152=Газпромбанк
+icon_151=Сбербанк
+icon_150=Tele2  
+icon_149=Мегафон

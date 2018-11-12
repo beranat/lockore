@@ -527,8 +527,8 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
     static final int ICON_INTERNAL_INDEX     = 128;
 
     private static final String[] ICON_EXTRA_NAMES = {
-        "admin",    "airplane", "anonymous","basket",   "bluedoc",
-        "bulb",     "bus",
+        "admin",    "airplane", "anonymous",
+        "basket",   "bluedoc",  "bulb",     "bus",
         "car",      "card",     "cloud",    "coin",
         "devel",
         "floppy",   "forum",
@@ -536,6 +536,7 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "home",     "hsm",
         "laptop",   "lightning",
         "medkit",   "messanger","music",
+        "note",
         "office",
         "palm",     "paw",      "printer",
         "rain",     "reddoc",
