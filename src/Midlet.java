@@ -533,17 +533,18 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "devel",
         "floppy",   "forum",
         "garage",   "gift",     "gnu",
-        "home",     "hsm",
+        "heart",    "home",     "hsm",
         "laptop",   "lightning",
-        "medkit",   "messanger","music",
+        "medkit",   "messanger", "music",
         "note",
         "office",
-        "palm",     "paw",      "printer",
+        "padlock",  "palm",     "paw",      "printer",
         "rain",     "reddoc",
         "satelite", "server",   "shield",   "snow",     "sun",      "sword",
         "thermometer","ticket", "transmitter", "tux",   "tv",
-        "user"
-    };
+        "user",
+        "wallet"
+    }; // 229...176 named icons
 
     static final int ICON_NULL               = Record.DEFAULT_ICON;
 

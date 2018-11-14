@@ -329,6 +329,7 @@ forum=форум
 garage=гараж
 gift=подарок
 gnu=GNU
+heart=сердце
 home=дом
 hsm=амб
 laptop=ноутбук
@@ -338,6 +339,7 @@ messanger=сообщения
 music=музыка
 note=заметка
 office=офис
+padlock=замок
 palm=пальма
 paw=лапа
 printer=принтер
@@ -355,6 +357,7 @@ transmitter=антенна
 tux=тукс
 tv=телевизор
 user=человек
+wallet=кошелёк
 
 #AddFileList
 No\ access\ to\ files=Нет доступа к файлам
