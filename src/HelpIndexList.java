@@ -80,7 +80,7 @@ final class HelpIndexList extends ListScreen {
 
         addIndex(GET_STARTED,   Midlet.ICON_NUMBER);
         addIndex(STORES,        Midlet.ICON_STORE);
-        addIndex(RECORDS,       Midlet.ICON_ID);
+        addIndex(RECORDS,       Midlet.ICON_KEY);
         addIndex(FIELDS,        Midlet.ICON_TEXT);
         addIndex(TYPES,         Midlet.ICON_BINARY);
         addIndex(SETTINGS,      Midlet.ICON_SETTINGS);

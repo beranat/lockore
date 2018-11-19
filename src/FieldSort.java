@@ -22,11 +22,21 @@ import madrat.storage.Field;
 
 /**
  * Sort class for madrat.storage.Field
- *  - Unprotected strings
- *  - Protected strings
- *  - Numbers and Dates
+ *  - Unprotected       - 0x00
+ *  - Protected         - 0x01
+ *  - Binaries          - 0x02/0x03
+ *  - Dates (unprotected 1st) - 0x04/0x05
  */
 final class FieldSort implements IComparator {
+
+    private static final int getOrder(Field f) {
+        int order = (f.isProtected()?0x01:0x00);
+        if (Field.BINARY == f.getType())
+            order |= 0x2;
+        if (Midlet.DATE_FORMAT == f.getFormat())
+            order |= 0x4;
+        return order;
+    }
 
     public boolean isLess(Object o1, Object o2) {
         final GenericItem i1 = (GenericItem)o1;
@@ -41,18 +51,12 @@ final class FieldSort implements IComparator {
         final Field f1 = (Field)i1.getUserInfo();
         final Field f2 = (Field)i2.getUserInfo();
 
-        final boolean isString1 = (Field.STRING == f1.getType());
-        final boolean isString2 = (Field.STRING == f2.getType());
-        if (isString1 != isString2)
-            return isString1;
+        final int f1o = getOrder(f1);
+        final int f2o = getOrder(f2);
 
-        if (isString1) {
-            final boolean isProt1 = f1.isProtected();
-            final boolean isProt2 = f2.isProtected();
-            if (isProt1 != isProt2)
-                return isProt2;
-        }
+        if (f1o != f2o)
+            return f1o < f2o;
 
-        return QuickSort.lessString(f1.getName(),  f2.getName());
+           return QuickSort.lessString(f1.getName(),  f2.getName());
     }
 }

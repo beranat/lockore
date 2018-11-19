@@ -521,7 +521,6 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
     static final int ICON_SIGNATURE          = 241;
     static final int ICON_CHIP               = 240;
     static final int ICON_RANDOM             = 239;
-    static final int ICON_ID                 = 238;
 
     static final int ICON_EXTRA_INDEX        = 230;
     static final int ICON_INTERNAL_INDEX     = 128;
@@ -534,6 +533,7 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "floppy",   "forum",
         "garage",   "gift",     "gnu",
         "heart",    "home",     "hsm",
+        "identity",
         "laptop",   "lightning",
         "medkit",   "messanger", "music",
         "note",
@@ -613,7 +613,6 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
             case ICON_SIGNATURE:        return "signature";
             case ICON_CHIP:             return "chip";
             case ICON_RANDOM:           return "random";
-            case ICON_ID:               return "identity";
 
             default:
                 final int iconId = icon&0xFF;

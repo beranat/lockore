@@ -310,7 +310,6 @@ certificate=сертификат
 signature=подпись
 chip=память
 random=случайность
-identity=удостоверение
 
 admin=администратор
 airplane=самолёт
@@ -332,6 +331,7 @@ gnu=GNU
 heart=сердце
 home=дом
 hsm=амб
+identity=удостоверение
 laptop=ноутбук
 lightning=молния
 medkit=аптечка
