@@ -157,7 +157,7 @@ public class LongMenuItem extends GenericItem {
         // fit max at 1st line
         for (int i = title_.length()-1; i > 1; --i ) {
             titleLine0_ = title_.substring(0, i);
-            titleLine1_ = title_.substring(i+1);
+            titleLine1_ = title_.substring(i);
             if (fontTitle_.stringWidth(titleLine0_) <= width)
                 return;
         }
