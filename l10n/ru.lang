@@ -372,39 +372,39 @@ Spend=Изъять
 Feature\ not\ supported=Возможность не поддерживается
 {0}\ saved={0} сохранён
 
-#Pay systems
-icon_191=AmEx
-icon_190=Diners\ Club
-icon_189=MasterCard
-icon_188=VISA
-icon_187=UnionPay
-icon_186=PayPal
-icon_185=МИР
-icon_184=JCB
-icon_183=Криптовалюта
+#Pay-sys 175-160
+icon_175=AmEx
+icon_174=Diners\ Club
+icon_173=MasterCard
+icon_172=VISA
+icon_171=UnionPay
+icon_170=PayPal
+icon_169=МИР
+icon_168=JCB
+icon_167=Криптовалюта
 
-#Custom
-icon_175=Sony
-icon_174=Steam
-icon_173=Origin
-icon_172=Skype
-icon_171=Apple
-icon_170=Google
-icon_169=Ebay
-icon_168=Amazon
-icon_167=Microsoft
-icon_166=Epic\ Games
-icon_165=Yubikey
+#Extra 159-128
+icon_159=Sony
+icon_158=Steam
+icon_157=Origin
+icon_156=Skype
+icon_155=Apple
+icon_154=Google
+icon_153=Ebay
+icon_152=Amazon
+icon_151=Microsoft
+icon_150=Epic\ Games
+icon_149=Yubikey
 
-#Custom ru
-icon_159=Яндекс.Деньги
-icon_158=Яndex
-icon_157=Mail.Ru
-icon_156=Тинькофф
-icon_155=Альфа банк
-icon_154=Авангард
-icon_153=Промсвязьбанк
-icon_152=Газпромбанк
-icon_151=Сбербанк
-icon_150=Tele2
-icon_149=Мегафон
+#Extra-RU 127-
+icon_127=Яндекс.Деньги
+icon_126=Яndex
+icon_125=Mail.Ru
+icon_124=Тинькофф
+icon_123=Альфа банк
+icon_122=Авангард
+icon_121=Промсвязьбанк
+icon_120=Газпромбанк
+icon_119=Сбербанк
+icon_118=Tele2
+icon_117=Мегафон
