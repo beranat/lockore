@@ -19,13 +19,13 @@
 
 package madrat.i18n;
 
-import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Hashtable;
+import javax.microedition.io.ConnectionNotFoundException;
 
 /**
  * Internationalization support class
@@ -35,10 +35,12 @@ public final class I18N {
 
     private static final String PLURAL_SUFFIX = "_N";
 
-    private static final int    MAX_L10_SUBST = 5; // no more then MAX_L10_SUBST chars in {...}
+    private static final int    MAX_SUBSTITUTION_LEN = 5; // no more then MAX_SUBSTITUTION_LEN chars in {...}
     private static final String DEFAULT_LANG = "en";
 
-    private static final String LOCALIZATION_FILE = "/{0}.lang";
+    private static final String L18N_FILEPATH = "/{0}.lang";
+    private static final String L18N_EXTRA_DEFFILENAME = "extra";
+    private static final String L18N_EXTRA_FILENAME = L18N_EXTRA_DEFFILENAME + "_{0}";
     private static final String FIX_SEPARATORS = "-.";
     private static final char SEPARATOR = '_';
 
@@ -69,8 +71,8 @@ public final class I18N {
     }
 
     private static boolean loadPlurals(String locale) {
-        if (null == locale || isLang(locale, F1_Plural.LANGUAGES)) {
-            plural_ = new F1_Plural();
+        if (null == locale || isLang(locale, Plural.LANGUAGES)) {
+            plural_ = new Plural();
             return true;
         }
 
@@ -115,24 +117,38 @@ public final class I18N {
             if (0 < ind && ind < locale.length()-1)
                 locales[size++] = locale.substring(0, ind);
         }
+
         locales[size++] = DEFAULT_LANG;
 
-        for (int i = 0; i < size; ++i) {
+        // load main
+        boolean loaded = false;
+        for (int i = 0; i < size && !loaded; ++i) {
             String l = locales[i];
             if (loadMessages(l)) {
                 for (int j = i; j < size; ++j) {
                     String lp = locales[j];
-                    if (loadPlurals(lp))
-                        return true;
+                    if (loadPlurals(lp)) {
+                        loaded = true;
+                        break;
+                    }
                 }
                 loadPlurals(null);
-                return true;
+                loaded = true;
+                break;
             }
         }
 
-        messages_.clear();
-        loadPlurals(null);
-        return false;
+        if (!loaded) {
+            messages_.clear();
+            loadPlurals(null);
+        }
+
+        //load add-on file(s)
+        for (int i = size; i >= 0; --i) {
+            String name = (i<size)?format(L18N_EXTRA_FILENAME, locales[i]):L18N_EXTRA_DEFFILENAME;
+            appendMessages(name);
+        }
+        return loaded;
     }
 
     /**
@@ -195,7 +211,6 @@ public final class I18N {
     public static String get(String key, String[] args) {
         return format(get(key, true), args);
     }
-
 
     /**
      * Localize key-string and format message with argument.
@@ -352,7 +367,7 @@ public final class I18N {
                         end = len;
                     }
 
-                    final int l = (start + MAX_L10_SUBST > end)?end:start+MAX_L10_SUBST;
+                    final int l = (start + MAX_SUBSTITUTION_LEN > end)?end:start+MAX_SUBSTITUTION_LEN;
 
                     int  arg = 0;
                     for (int j = start; j < l; ++j) {
@@ -394,13 +409,25 @@ public final class I18N {
         messages_.clear();
         if (null == locale || 0 >= locale.length())
             locale = DEFAULT_LANG;
+        return appendMessages(locale);
+    }
+
+    /**
+     * Appends messages from input stream to hash table.
+     *
+     * @param inStream stream from which the messages are read
+     * @throws IOException if there is any problem with reading the messages
+     */
+    private static boolean appendMessages(String locale) {
+        if (null == locale || 0 == locale.length())
+            return false;
 
         try {
             final Class c = Runtime.getRuntime().getClass();
-            InputStream is = c.getResourceAsStream(format(LOCALIZATION_FILE, locale));
+            InputStream is = c.getResourceAsStream(format(L18N_FILEPATH, locale));
 
             if (null == is)
-                throw new EOFException("No l10n file");
+                throw new  ConnectionNotFoundException("No l10n file");
 
             InputStreamReader in = new InputStreamReader(is, "UTF-8");
 

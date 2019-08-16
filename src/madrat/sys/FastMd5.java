@@ -15,7 +15,7 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-package madrat.fast;
+package madrat.sys;
 
 /**
  * Tuned MD5 implementation

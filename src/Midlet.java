@@ -545,7 +545,9 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "thermometer","ticket", "transmitter", "tux",   "tv",
         "user",
         "wallet"
-    }; // 229...176 named icons
+    }; 	// 229...176 named icons
+		// 175...160 payment system icons
+		// 159...128 extra icons
 
     static final int ICON_NULL               = Record.DEFAULT_ICON;
 

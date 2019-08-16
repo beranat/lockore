@@ -24,7 +24,7 @@ package madrat.i18n;
  * XXX_N - Plural
  * Languages: Belarusian, Bosnian, Croatian, Serbian, Russian, Ukrainian
  */
-public class F3_Plural implements Plural {
+public class F3_Plural extends Plural {
     public static final String[] LANGUAGES = {"by", "ba", "hr", "rs", "ru", "ua"};
 
     public String get(long quantity) {

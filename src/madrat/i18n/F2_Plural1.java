@@ -26,7 +26,7 @@ package madrat.i18n;
  *              Italian, Spanish, Catalan
  *              Greek, Hebrew
  */
-public class F2_Plural1 implements Plural {
+public class F2_Plural1 extends Plural {
     public static final String[] LANGUAGES = {
                 "da", "nl", "en", "de", "no", "sv",
                 "et", "fi", "hu",

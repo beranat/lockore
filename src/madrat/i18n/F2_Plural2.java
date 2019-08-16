@@ -23,7 +23,7 @@ package madrat.i18n;
  * XXX_N - Plural
  * Languages: French, Brazilian, Portuguese
  */
-public class F2_Plural2 implements Plural {
+public class F2_Plural2 extends Plural {
     public static final String[] LANGUAGES = { "fr", "br", "pt" };
 
     public String get(long quantity) {
