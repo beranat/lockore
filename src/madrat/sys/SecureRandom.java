@@ -39,7 +39,7 @@ public class SecureRandom {
     protected int generated_ = 0;
 
     public SecureRandom() throws GeneralSecurityException {
-        cipher_ = Cipher.getInstance("AES/CBC/NoPadding");
+        cipher_ = Cipher.getInstance("AES/ECB/NoPadding");
         hash_ = new Sha3(CIPHER_SIZE);
         counter_ = new byte[CIPHER_SIZE/8]; // size in BYTES
         counter_[0] = 1;
