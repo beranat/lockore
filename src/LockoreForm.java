@@ -135,10 +135,8 @@ class LockoreForm extends Form implements CommandListener, ItemCommandListener, 
     }
 
     protected static String hideEmail(String email) {
-        //  name: < 5 => *****
-        //        >=  => m***t@domain.com
-        final int at = email.indexOf('@');
-        return I18N.get("******@{0}", (at != -1)?email.substring(at+1):hideUri("email.com"));
+	final int at = email.indexOf('@') + 1;        
+        return I18N.get("****@{0}", hideUri((at < email.length())?email.substring(at):"mail.com"));
     }
 
     public static int getUriSchema(String uri) {
