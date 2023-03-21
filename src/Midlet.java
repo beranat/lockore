@@ -527,14 +527,14 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
 
     private static final String[] ICON_EXTRA_NAMES = {
         "admin",    "airplane", "anonymous",
-        "ball8", 	"basket",   "bluedoc",  "bulb",     "bus",
+        "ball8",    "basket",   "bluedoc",  "bulb",     "bus",
         "car",      "card",     "cloud",    "coin",
         "devel",
         "floppy",   "forum",
         "garage",   "gift",     "gnu",
         "heart",    "home",     "hsm",
         "identity",
-		"joystick",
+        "joystick",
         "laptop",   "lightning",
         "medkit",   "messanger", "music",
         "note",
@@ -546,8 +546,8 @@ public final class Midlet extends javax.microedition.midlet.MIDlet implements Co
         "user",
         "wallet"
     }; 	// 229...176 named icons
-		// 175...160 payment system icons
-		// 159...128 extra icons
+    // 175...160 payment system icons
+    // 159...128 extra icons
 
     static final int ICON_NULL               = Record.DEFAULT_ICON;
 
